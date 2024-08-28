@@ -1,0 +1,100 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --bg-color: #080808;
+    --second-bg-color: #131313;
+    --text-color: white;
+    --main-color: #78A9EA;
+}
+.bg-color{
+    background: var(--bg-color);
+}
+.second-bg-color{
+    background: var(--second-bg-color);
+}
+.text-color{
+    color: var(--text-color);
+}
+.main-color{
+    color: var(--main-color);
+}
+
+/* BUTTONS */
+.btn-main {
+    color: black;
+    background: var(--main-color);
+}
+.btn-outline-main {
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    transition: 0.6s ease;
+}
+.btn-main:hover,
+.btn-outline-main:hover{
+    background: var(--main-color);
+    color: black;
+}
+
+/********** NAVBAR */
+.navbar{
+    background: black;
+}
+.navbar a{
+    color: var(--text-color);
+    transition: 0.6s ease;
+}
+/* NAVBAR LOGO/BRAND */
+.navbar-brand:hover{
+    transform: scale(1.1);
+    color: var(--text-color);
+}
+/* NAVBAR BUTTONS */
+.navbar-nav .nav-item{
+    padding: 0 1rem;
+}
+.navbar-nav a{
+    border-bottom: 3px solid transparent;
+}
+
+.navbar-nav a:hover,
+.navbar-nav a.active{
+    color: var(--main-color) !important;
+}
+
+/********** MAIN CONTENT */
+/* SECTION: INTRODUCTION */
+.intro-img img{
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+}
+/* SECTION: SKILLS */
+.skills{
+    padding-top: 80px;
+}
+.skills .card-title {
+    text-align: center;
+}
+.skills .list-group-item {
+    background: transparent;
+    color: var(--text-color);
+}
+.skills .list-group-item img{
+    height: 30px;
+}
+/* SECTION: PROJECTS */
+.projects{
+    padding-top: 80px;
+}
+/* SECTION: CONTACT */
+.contact{
+    padding-top: 40px;
+}
+.contact a{
+    /*border-bottom: 5px solid var(--main-color);*/
+    box-shadow: 0 6px 3px var(--main-color);
+}
+.contact .card-text{
+    font-size: 14px;
+}
