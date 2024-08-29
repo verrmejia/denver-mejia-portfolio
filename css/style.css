@@ -87,13 +87,26 @@
 .projects{
     padding-top: 80px;
 }
+.projects .card{
+    background: var(--bg-color);
+    border: 3px solid rgba(128, 128, 128, 0.473);
+    border-radius: 1rem;
+    color: var(--text-color);
+}
+.projects .project-name{
+    color: var(--main-color);
+}
+.projects img{
+    border-radius: 15px 15px 0px 0px;
+    height: 150px;
+}
 /* SECTION: CONTACT */
 .contact{
     padding-top: 40px;
 }
 .contact a{
-    /*border-bottom: 5px solid var(--main-color);*/
-    box-shadow: 0 6px 3px var(--main-color);
+    border-bottom: 5px solid var(--main-color);
+    /*box-shadow: 0 6px 3px var(--main-color);*/
 }
 .contact .card-text{
     font-size: 14px;
