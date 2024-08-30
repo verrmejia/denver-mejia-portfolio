@@ -93,12 +93,14 @@
     border-radius: 1rem;
     color: var(--text-color);
 }
+.projects img{
+    border-radius: 15px 15px 0px 0px;
+}
 .projects .project-name{
     color: var(--main-color);
 }
-.projects img{
+.projects iframe{
     border-radius: 15px 15px 0px 0px;
-    height: 150px;
 }
 /* SECTION: CONTACT */
 .contact{
