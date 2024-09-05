@@ -95,6 +95,7 @@
 }
 .projects img{
     border-radius: 15px 15px 0px 0px;
+    height: 196px;
 }
 .projects .project-name{
     color: var(--main-color);
