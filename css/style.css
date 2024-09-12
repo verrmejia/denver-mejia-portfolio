@@ -1,5 +1,6 @@
 *{
     font-family: "Poppins", sans-serif;
+    /* font-family: "Kanit", sans-serif; */
 }
 :root{
     --bg-color: #080808;
@@ -42,7 +43,7 @@
 }
 .navbar a{
     color: var(--text-color);
-    transition: 0.6s ease;
+    transition: 0.3s ease;
 }
 /* NAVBAR LOGO/BRAND */
 .navbar-brand:hover{
@@ -54,12 +55,12 @@
     padding: 0 1rem;
 }
 .navbar-nav a{
-    border-bottom: 3px solid transparent;
+    transition: 0.4 ease;
 }
-
 .navbar-nav a:hover,
 .navbar-nav a.active{
     color: var(--main-color) !important;
+    transform: scale(1.1);
 }
 
 /********** MAIN CONTENT */
@@ -93,15 +94,51 @@
     border-radius: 1rem;
     color: var(--text-color);
 }
-.projects img{
+.projects .card-img{
+    overflow: hidden;
     border-radius: 15px 15px 0px 0px;
+}
+.projects img{
     height: 196px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.projects img:hover{
+    transform: scale(1.03);
+}
+.popup-image{
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0, 0, 0, .9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+.popup-image span{
+    position: absolute;
+    top: 60px; right: 20px;
+    font-size: 60px;
+    font-weight: bolder;
+    color: var(--text-color);
+    cursor: pointer;
+}
+.popup-image img{
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid #fff;
+    border-radius: 5px;
+    width: 1280px;
+    object-fit: cover;
+}
+@media (max-width: 1350px){
+    .popup-image img{
+        width: 95%;
+    }
 }
 .projects .project-name{
     color: var(--main-color);
-}
-.projects iframe{
-    border-radius: 15px 15px 0px 0px;
 }
 /* SECTION: CONTACT */
 .contact{
